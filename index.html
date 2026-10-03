@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="الصفحة الرسمية لروابط Abdeladime AM — تجارة إلكترونية وصناعة محتوى. يوتيوب، إنستغرام، تيكتوك وفيسبوك في بلاصة وحدة." />
+    <link rel="icon" href="data:," />
+    <title>Abdeladime AM — روابطي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f4f4f1;
+        --bg-dot: rgba(23, 25, 28, 0.055);
+        --surface: #ffffff;
+        --surface-hover: #fdfdfc;
+        --ink: #17191c;
+        --ink-soft: #4c5158;
+        --muted: #83898f;
+        --line: #e2e1da;
+        --accent: #0a7a5c;
+        --accent-strong: #065f47;
+        --accent-soft: #e3f2ec;
+        --soon-bg: #efefec;
+        --shadow: 0 1px 2px rgba(23, 25, 28, 0.05), 0 10px 30px -18px rgba(23, 25, 28, 0.25);
+        --yt-chip: #fdeceb;
+        --tt-chip: #17191c;
+        --tt-note: #ffffff;
+        --fb-chip: #e9f0fd;
+        --bar-track: #e7e6e0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d100f;
+          --bg-dot: rgba(238, 241, 238, 0.05);
+          --surface: #161a18;
+          --surface-hover: #1a1f1c;
+          --ink: #eef1ee;
+          --ink-soft: #b9c0ba;
+          --muted: #7e877f;
+          --line: #262c28;
+          --accent: #2fbf9b;
+          --accent-strong: #5fd3b3;
+          --accent-soft: #123128;
+          --soon-bg: #1d211e;
+          --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -18px rgba(0, 0, 0, 0.7);
+          --yt-chip: #3a1d1a;
+          --tt-chip: #eef1ee;
+          --tt-note: #17191c;
+          --fb-chip: #1c2a45;
+          --bar-track: #262c28;
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif;
+        background-color: var(--bg);
+        background-image: radial-gradient(var(--bg-dot) 1px, transparent 1.1px);
+        background-size: 22px 22px;
+        color: var(--ink);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 30rem;
+        margin: 0 auto;
+        padding: clamp(2.2rem, 7vh, 4rem) 1.25rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      /* ---------- Profile ---------- */
+      .profile { text-align: center; margin-bottom: 2rem; }
+
+      .avatar {
+        width: 6.5rem;
+        height: 6.5rem;
+        margin: 0 auto 1.1rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 32% 28%, #128a6a 0%, var(--accent-strong) 58%, #04402f 100%);
+        color: #fff;
+        font-family: "Sora", "IBM Plex Sans Arabic", sans-serif;
+        font-size: 2.9rem;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 0 0 4px var(--bg),
+          0 0 0 5.5px var(--line),
+          0 14px 30px -14px rgba(6, 95, 71, 0.55);
+        user-select: none;
+      }
+
+      h1 {
+        font-family: "Sora", "IBM Plex Sans Arabic", sans-serif;
+        font-size: 1.85rem;
+        font-weight: 800;
+        margin: 0;
+        letter-spacing: 0.01em;
+        direction: ltr;
+      }
+      h1 .am { color: var(--accent); }
+
+      .handle {
+        direction: ltr;
+        margin: 0.3rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+
+      .bio {
+        margin: 0.9rem auto 0;
+        max-width: 21rem;
+        color: var(--ink-soft);
+        font-size: 1.02rem;
+        line-height: 1.8;
+      }
+      .bio strong { color: var(--ink); font-weight: 600; }
+
+      /* ---------- Links ---------- */
+      .links { display: flex; flex-direction: column; gap: 0.8rem; }
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 0.85rem 1rem;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        box-shadow: var(--shadow);
+        text-decoration: none;
+        color: var(--ink);
+        transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      }
+      a.link:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+        background: var(--surface-hover);
+      }
+      a.link:focus-visible {
+        outline: 2.5px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      .chip {
+        flex: 0 0 auto;
+        width: 2.9rem;
+        height: 2.9rem;
+        border-radius: 0.8rem;
+        display: grid;
+        place-items: center;
+      }
+      .chip svg { width: 1.55rem; height: 1.55rem; display: block; }
+      .chip.yt { background: var(--yt-chip); }
+      .chip.tt { background: var(--tt-chip); color: var(--tt-note); }
+      .chip.fb { background: var(--fb-chip); }
+      .chip.ig { background: linear-gradient(45deg, #feda75 0%, #fa7e1e 32%, #d62976 62%, #962fbf 85%, #4f5bd5 100%); }
+
+      .link-text { flex: 1 1 auto; min-width: 0; text-align: start; }
+      .link-text .name {
+        display: block;
+        font-size: 1.06rem;
+        font-weight: 600;
+        line-height: 1.45;
+      }
+      .link-text .desc {
+        display: block;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+
+      .go {
+        flex: 0 0 auto;
+        color: var(--muted);
+        display: grid;
+        place-items: center;
+      }
+      .go svg { width: 1.15rem; height: 1.15rem; }
+      a.link:hover .go { color: var(--accent); }
+
+      /* YouTube goal progress */
+      .goal { margin-top: 0.65rem; }
+      .goal .bar {
+        height: 0.4rem;
+        border-radius: 999px;
+        background: var(--bar-track);
+        overflow: hidden;
+      }
+      .goal .fill {
+        height: 100%;
+        width: 67.5%;
+        border-radius: 999px;
+        background: #e62117;
+      }
+      .goal .cap {
+        margin-top: 0.4rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+      .goal .cap b { color: var(--ink-soft); font-weight: 600; }
+
+      /* Coming-soon rows */
+      .link.soon {
+        background: var(--soon-bg);
+        box-shadow: none;
+        border-style: dashed;
+        cursor: default;
+      }
+      .link.soon .chip { filter: grayscale(1); opacity: 0.55; }
+      .link.soon .link-text .name { color: var(--ink-soft); }
+      .badge {
+        flex: 0 0 auto;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--accent-strong);
+        background: var(--accent-soft);
+        border: 1px solid var(--line);
+        padding: 0.22rem 0.6rem;
+        border-radius: 999px;
+      }
+
+      footer {
+        margin-top: 2.6rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      footer .brand { direction: ltr; font-family: "Sora", sans-serif; font-weight: 600; color: var(--ink-soft); }
+
+      @media (prefers-reduced-motion: reduce) {
+        .link { transition: none; }
+        a.link:hover { transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile">
+        <div class="avatar" aria-hidden="true">A</div>
+        <h1>Abdeladime <span class="am">. AM</span></h1>
+        <p class="handle">@ABDELADIME-AM</p>
+        <p class="bio"><strong>تجارة إلكترونية</strong> وصناعة محتوى — هنا كتلقى قاع الروابط الرسمية ديالي في بلاصة وحدة.</p>
+      </header>
+
+      <nav class="links" aria-label="روابط التواصل الاجتماعي">
+        <!-- YouTube — الرابط مؤكد -->
+        <div>
+          <a class="link" href="https://www.youtube.com/@ABDELADIME-AM" target="_blank" rel="noopener noreferrer">
+            <span class="chip yt" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="#FF0000"/><path d="M10 9.2v5.6c0 .5.55.82.98.56l4.7-2.8a.68.68 0 0 0 0-1.12l-4.7-2.8A.68.68 0 0 0 10 9.2Z" fill="#fff"/></svg>
+            </span>
+            <span class="link-text">
+              <span class="name">يوتيوب</span>
+              <span class="desc">قناتي الرسمية على يوتيوب</span>
+            </span>
+            <span class="go" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Instagram — الرابط ما زال ما تعطاش -->
+        <div class="link soon" aria-disabled="true">
+          <span class="chip ig" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="#fff" stroke="none"/></svg>
+          </span>
+          <span class="link-text">
+            <span class="name">إنستغرام</span>
+            <span class="desc">الرابط غادي يتزاد هنا قريباً</span>
+          </span>
+          <span class="badge">قريباً</span>
+        </div>
+
+        <!-- TikTok — الرابط ما زال ما تعطاش -->
+        <div class="link soon" aria-disabled="true">
+          <span class="chip tt" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="#25F4EE" transform="translate(0.7 0.5)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/><path fill="#FE2C55" transform="translate(-0.7 -0.4)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+          </span>
+          <span class="link-text">
+            <span class="name">تيك توك</span>
+            <span class="desc">الرابط غادي يتزاد هنا قريباً</span>
+          </span>
+          <span class="badge">قريباً</span>
+        </div>
+
+        <!-- Facebook — الرابط ما زال ما تعطاش -->
+        <div class="link soon" aria-disabled="true">
+          <span class="chip fb" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </span>
+          <span class="link-text">
+            <span class="name">فيسبوك</span>
+            <span class="desc">الرابط غادي يتزاد هنا قريباً</span>
+          </span>
+          <span class="badge">قريباً</span>
+        </div>
+      </nav>
+
+      <footer>
+        <span class="brand">Abdeladime . AM</span> © 2026 — قاع الحقوق محفوظة
+      </footer>
+    </main>
+  </body>
+</html>
